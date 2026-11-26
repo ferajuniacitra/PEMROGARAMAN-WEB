@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Syarat, Ketentuan &amp; Pembayaran - RentalKu</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header><div class="logo">RentalKu</div></header>
+  <nav>
+    <a href="index.html">beranda &amp; Data Diri</a>
+    <a href="katalog.html">Katalog &amp; Pilih Kendaraan</a>
+    <a href="syarat.html" class="active">Syarat &amp; Pembayaran</a>
+  </nav>
+
+  <main class="grid-container">
+    <section class="kartu">
+      <h2>Syarat Dokumen Penyewaan</h2>
+      <ul>
+        <li>Wajib memiliki E-KTP asli.</li>
+        <li>Memiliki SIM A (untuk mobil) atau SIM C (untuk motor) yang masih aktif.</li>
+        <li>Meninggalkan dokumen jaminan tambahan (KTM, KK, atau Paspor asli).</li>
+      </ul>
+
+      <h2 class="judul-kedua">Ketentuan Sewa</h2>
+      <ul>
+        <li>Hitungan sewa per hari adalah 24 jam sejak pengambilan.</li>
+        <li>Keterlambatan pengembalian dikenakan denda 10% dari harga sewa per jam.</li>
+        <li>Dilarang menyewakan kembali kendaraan kepada pihak ketiga.</li>
+      </ul>
+    </section>
+    <section class="kartu" id="form-pembayaran">
+      <h2>3. Pembayaran &amp; Ringkasan Biaya</h2>
+      <form id="form-pesanan-3">
+        <fieldset>
+          <legend>Konfirmasi &amp; Metode Pembayaran</legend>
+          
+          <div class="total-box">
+            <h3>Total Biaya Sewa</h3>
+            <span id="total-biaya">Rp 0</span>
+          </div>
+
+          <div class="grup-input">
+            <label for="metode">Metode Pembayaran:</label>
+            <select id="metode" name="metode" required>
+              <option value="">-- Pilih Metode --</option>
+              <option value="transfer">Transfer Bank (BCA / Mandiri / BNI)</option>
+              <option value="ewallet">E-Wallet (GoPay / OVO / Dana)</option>
+            </select>
+          </div>
+
+          <div class="grup-input">
+            <label>
+              <input type="checkbox" id="setuju-syarat" required> Saya telah membaca dan menyetujui Syarat &amp; Ketentuan di atas.
+            </label>
+          </div>
+
+          <div>
+            <button type="submit" class="btn-primary">Bayar Sekarang</button>
+          </div>
+        </fieldset>
+      </form>
+    </section>
+  </main>
+
+  <script src="syarat.js"></script>
+</body>
+</html>
